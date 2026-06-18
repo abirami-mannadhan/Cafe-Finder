@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Finder - Discover Your Perfect Coffee Spot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background gradient -->
+    <div class="background-gradient"></div>
+    
+    <!-- Floating elements for ambiance -->
+    <div class="floating-elements">
+        <div class="float-element" style="top: 10%; left: 20%;">☕</div>
+        <div class="float-element" style="top: 80%; left: 15%;">🌸</div>
+        <div class="float-element" style="top: 30%; right: 25%;">✨</div>
+        <div class="float-element" style="top: 70%; right: 10%;">🍃</div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>☕ Cafe Finder</h1>
+                <p class="tagline">Discover your perfect coffee moment</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h2 class="hero-title">Find Your Perfect Coffee Spot</h2>
+                <p class="hero-subtitle">Discover cozy cafes, artisan coffee, and memorable moments</p>
+                
+                <!-- Floating Search Bar -->
+                <div class="search-container">
+                    <div class="search-wrapper glass-card">
+                        <input type="text" id="searchInput" placeholder="Search cafes, locations, or vibes..." class="search-input">
+                        <button class="search-btn">
+                            <span class="search-icon">🔍</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Filter Tags -->
+            <section class="filters">
+                <div class="filter-tags">
+                    <button class="filter-tag active" data-filter="all">All Cafes</button>
+                    <button class="filter-tag" data-filter="cozy">☕ Cozy</button>
+                    <button class="filter-tag" data-filter="popular">✨ Popular</button>
+                    <button class="filter-tag" data-filter="trendy">🌟 Trendy</button>
+                    <button class="filter-tag" data-filter="quiet">🍃 Quiet</button>
+                </div>
+            </section>
+
+            <!-- Cafe Cards Grid -->
+            <section class="cafes-grid" id="cafesGrid">
+                <!-- Cafe cards will be dynamically loaded here -->
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Cafe Finder. Made with ☕ and ❤️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
